@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accesso App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card" aria-label="Modulo di accesso">
+        <h1>Accedi alla tua App</h1>
+        <p class="subtitle">Inserisci le tue credenziali per continuare.</p>
+
+        <form id="login-form" novalidate>
+          <label for="username">Nome Utente</label>
+          <input id="username" name="username" type="text" placeholder="Il tuo nome utente" required />
+
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="La tua password" required />
+
+          <label class="remember-row" for="remember">
+            <input id="remember" name="remember" type="checkbox" />
+            <span>Ricordami</span>
+          </label>
+
+          <button id="submit" type="submit">Accedi</button>
+        </form>
+
+        <p id="status" class="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
